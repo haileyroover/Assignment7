@@ -1,0 +1,74 @@
+[
+    {
+        "title": "Kingston",
+        "artist": "Faye Webster",
+        "genres": ["Indie"],
+        "year": "2019"
+    },
+    {
+        "title": "Show Me How",
+        "artist": "Men I Trust",
+        "genres": ["Indie"],
+        "year": "2019"
+    },
+    {
+        "title": "Paprika",
+        "artist": "Japanese Breakfast",
+        "genres": ["Indie", "Pop"],
+        "year": "2021"
+    },
+    {
+        "title": "Avant Gardener",
+        "artist": "Courtney Barnett",
+        "genres": ["Folk"],
+        "year": "2015"
+    },
+    {
+        "title": "Binz",
+        "artist": "Solange",
+        "genres": ["RnB"],
+        "year": "2019"
+    },
+    {
+        "title": "Ex-Factor",
+        "artist": "Lauren Hill",
+        "genres": ["RnB"],
+        "year": "1998"
+    },
+    {
+        "title": "Good Days",
+        "artist": "SZA",
+        "genres": ["RnB", "Pop"],
+        "year": "2020"
+    },
+    {
+        "title": "Rude Boy",
+        "artist": "Rihanna",
+        "genres": ["Pop","RnB"],
+        "year": "2009"
+    },
+    {
+        "title": "First Class",
+        "artist": "Jack Harlow",
+        "genres": ["Pop"],
+        "year": "2022"
+    },
+    {
+        "title": "Bad Habit",
+        "artist": "Steve Lacy",
+        "genres": ["Pop","Indie"],
+        "year": "2022"
+    },
+    {
+        "title": "As it Was",
+        "artist": "Harry Styles",
+        "genres": ["Pop"],
+        "year": "2022"
+    },
+    {
+        "title": "Heat Waves",
+        "artist": "Glass Animals",
+        "genres": ["Pop","Indie"],
+        "year": "2020"
+    }
+]
