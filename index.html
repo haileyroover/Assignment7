@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Song List</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</head>
+<body>
+    
+    <script language="javascript">
+        
+        $.get( "https://haileyroover.github.io/Assignment7/songlist.json",
+            function( data ) {
+                str = JSON.stringify(data);
+                document.write(str + "<br/>");
+                strHTML = "<p id = 'songs'>";
+                    i = 0;
+                    data.forEach(function(song) {
+                        str = song.title;
+                        strHTML += "<p id = \"" + i + "\"><br/>"
+                            + str + "<br/>" 
+                            + "Artist: " + song.artist + "<br/>"
+                            + "Genre: " + song.genres + "<br/>"
+                            + "Year: " + song.year + "<br/></p>";
+                            i++;
+                    })
+                strHTML += "</p>";
+                strForm = "<br/>Select a genre: <br/><form name = 'form'>"
+                        + "<select id = 'select'>"
+                        + "<option value = 'Indie'>Indie</option>"
+                        + "<option value = 'Pop'>Pop</option>"
+                        + "<option value = 'RnB'>RnB</option>"
+                        + "</select>"
+                        + "</form><button value = 'Filter' onclick= 'return filter()'>Filter</button>";
+                 document.write(strForm);
+                document.write(strHTML);
+            })
+            function filter(){
+                for (i = 0; i < 11; i++){
+                    document.getElementById(i).style.display = "none";
+                }
+                document.getElementById('songs').style.display = "none";
+                if (document.getElementById('select').value == "Indie"){
+                    document.getElementById(0).style.display = "block";
+                    document.getElementById(1).style.display = "block";
+                    document.getElementById(2).style.display = "block";
+                    document.getElementById(3).style.display = "block";
+                    document.getElementById(9).style.display = "block";
+                    document.getElementById(11).style.display = "block";
+                }
+                if (document.getElementById('select').value == "Pop"){
+                    document.getElementById(2).style.display = "block";
+                    document.getElementById(6).style.display = "block";
+                    document.getElementById(7).style.display = "block";
+                    document.getElementById(8).style.display = "block";
+                    document.getElementById(10).style.display = "block";
+                }
+                if (document.getElementById('select').value == "RnB"){
+                    document.getElementById(4).style.display = "block";
+                    document.getElementById(5).style.display = "block";
+                    document.getElementById(6).style.display = "block";
+                    document.getElementById(7).style.display = "block";
+
+
+                }
+                
+            }
+    </script>
+    
+</body>
+</html>
